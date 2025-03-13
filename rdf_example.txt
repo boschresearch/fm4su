@@ -1,0 +1,53 @@
+Sample of a "Sequence":
+
+@prefix schema: <http://www.w3.org/2001/XMLSchema#> .
+@prefix nus: <http://www.nuscenes.org/nuScenes/> .
+@prefix map: <http://www.nuscenes.org/nuScenes/map/> .
+{
+    nus:Sequence_bebf5f5b2a674631ab5c88fd1aa9e87a a nus:Sequence ;
+      nus:hasFirstScene nus:Scene_5991fad3280c4f84b331536c32001a04 ;
+      nus:hasLastScene nus:Scene_35833ae5808e4ef186d1fdebac3d9cf6 ;
+      nus:hasScene nus:Scene_5991fad3280c4f84b331536c32001a04 , … ,nus:Scene_nus:Scene_b2e2ffeabf91451cb31a79649bfd95df , nus:Scene_ba2491f55619445e9d2e472f39f3b01b , nus:Scene_baaa60749cd04db7952fd8f4ef8ac837 , nus:Scene_c5a8f6d7a0fe4858b318aeac2524098f , nus:Scene_c9304cf98aad4ff0bb5b0cff0aab65d2 , nus:Scene_d7387fb5a21d40a990a5842cca61af1c , nus:Scene_df7066fa5f0d4b708982747cc3feed14 , nus:Scene_e426ccb3e7874894b16e06774ae5ec42 , nus:Scene_ed1eee39e3dd4c30a3d932e3ceaa92c2 , nus:Scene_f6ef25ab02c0483b9df411ed84873f41 , nus:Scene_ff007cb7b78443e6887401d694f0d369 ;
+      nus:hasDescription "Parking lot, parked cars, jaywalker, bendy bus, gardening vehicles" ;
+      nus:hasName "Sequence-0655" ;
+      nus:hasNbrScenes 41 .
+}
+
+
+
+Sample of a "Scene":
+
+@prefix nus: <http://www.nuscenes.org/nuScenes/> .
+{
+    nus:Scene_1c9a906c40f6417bbe1cea06d6e55501 a nus:Scene ;
+      nus:hasNextScene nus:Scene_a771effa2a2648d78096c3e92b95b129 ;
+      nus:hasPreviousScene nus:Scene_9fcdc52b791045e99c623c5fc643331f ;
+      nus:hasSceneParticipant nus:SceneParticipant_a2e392f46eb243c1b65524093531f165 , nus:SceneParticipant_abcd1530a75e40dfa7a5b4486fd2bac3 , nus:SceneParticipant_ac738295f21345659ff9ecf5ae6eab4d , nus:SceneParticipant_acae8b33271843c0aae5e41c0b57ed06 , nus:SceneParticipant_b1b2eb3d5feb424ebec3cbfc36a490b4 , nus:SceneParticipant_b30a68c6b6fb488097cf595c979ee4a3 , nus:SceneParticipant_b4998f18e4f646be96777afd3738af60 , nus:SceneParticipant_bb826d2328a54e6bb345185af1c41140 , nus:SceneParticipant_cac30e7005594e5d84e909849e990314 , nus:SceneParticipant_d03f515139664a6399fdb24accb433c3 , nus:SceneParticipant_d3926aa0ec334f08b391ce10997ed730 , nus:SceneParticipant_e551f60b6a6542e3a7db0bc2f16c1a6a , nus:SceneParticipant_e5c7aa1094554ba6904cb9972b4356d0 , nus:SceneParticipant_e8be2aedee32470a90db6e4b73f4a11f , nus:SceneParticipant_e98e139d89b0420b8fd40b528d598a6d , nus:SceneParticipant_ee2d24cf6a54476f815d9fdfb3261c8a , nus:SceneParticipant_efbe4cebfec4447891379dc6fc6af439 , nus:SceneParticipant_eff8f026592c4d78a3550ad1a7d8b1a7 , nus:SceneParticipant_f605305386314c16a115e1befa4732a8 , nus:SceneParticipant_fa657c181f3943fcaa5febf72955b8f8 , nus:SceneParticipant_fd998395f6e244fcb72ae07789b5775f ;
+      nus:hasTimestamp "2018-08-01T19:27:00.447745"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+}
+
+
+
+Sample of a "SceneParticipant":
+
+
+
+@prefix schema: <http://www.w3.org/2001/XMLSchema#> .
+@prefix nus: <http://www.nuscenes.org/nuScenes/> .
+@prefix map: <http://www.nuscenes.org/nuScenes/map/> .
+{
+    nus:SceneParticipant_0b13bb6e840f4bfa88165cc3cb8a5542 a nus:SceneParticipant ;
+      nus:isSceneParticipantOf nus:Participant_6346de1c47584b34833d6df500d2ed6c ;
+      map:isOn map:Lane_c04e23b3-4abe-4bff-8ed7-6017334a0422 ;
+      nus:hasState "VehicleStopped" ;
+      nus:hasVisibility 1 ;
+      nus:hasHeadingChangeRate 0.0E0 ;
+      nus:hasPosition nus:Point_0b13bb6e840f4bfa88165cc3cb8a5542 ;
+      nus:hasRotation nus:Quaternion_0b13bb6e840f4bfa88165cc3cb8a5542 ;
+      map:closeTo map:TrafficLightStopArea_c37b3db7-8bf1-45eb-82ab-a93b75986f86 , map:TurnStopArea_29e52805-3d86-4e31-b19a-32b0521ef00f , map:TurnStopArea_91056b66-b22c-434e-860b-556945a0eb61 , map:PedCrossing_9c6b1153-be47-427d-b762-642be1b163c3 , map:TurnStopArea_5abec80e-d3a1-425e-98ed-af3e021e926c , map:PedCrossingStopArea_9c639d78-8357-4496-a68f-aca369df89a0 , map:StopSignArea_9dc3c6ef-34de-44e8-92fe-e1ebd98da705 , map:TurnStopArea_3f614738-8b4b-43ac-a0c0-1d9796f3b691 , map:TurnStopArea_a46721e6-f43c-441f-93ef-213dc34ce151 ;
+      nus:hasDistanceToCenterline "3.553"^^schema:float ;
+      nus:relatedLongitudinal nus:SceneParticipant_1796f2adb80543d7a90ac9b62e11f79d , nus:SceneParticipant_b4998f18e4f646be96777afd3738af60 ;
+      nus:relatedPedestrian nus:SceneParticipant_30a8b6a2ed81496e85bd6b2c8d9b3190 , nus:SceneParticipant_672b763353534645b3797cc36e0c4824 , nus:SceneParticipant_b30a68c6b6fb488097cf595c979ee4a3 , nus:SceneParticipant_d3926aa0ec334f08b391ce10997ed730 , nus:SceneParticipant_e5c7aa1094554ba6904cb9972b4356d0 , nus:SceneParticipant_eff8f026592c4d78a3550ad1a7d8b1a7 ;
+      nus:relatedIntersecting nus:SceneParticipant_09745fc7ef654a3aa074f56939edec5d , nus:SceneParticipant_23ae3388193e4b20b00e0c9dd5e5fa07 , nus:SceneParticipant_42c01aa13ef94c4ab256b2dd10167d8b , nus:SceneParticipant_5c2bf192c31a46c48f006b8ab6cee00d , nus:SceneParticipant_6b409a5f21a14db9b115e83972833506 , nus:SceneParticipant_750f87bc17834d45bd32a6602110ddf9 , nus:SceneParticipant_759fe1452feb48f2850f2e7887645e76 , nus:SceneParticipant_79d5c7095ade40c59d2133b3aba339c7 , nus:SceneParticipant_7fecff667c6e4984ae6342862b07f81a , nus:SceneParticipant_841a507114154e9f8d29926585d6b035 , nus:SceneParticipant_89dd2f2ed4074470a3ba32a77dfc33ee , nus:SceneParticipant_fa657c181f3943fcaa5febf72955b8f8 ;
+      nus:relatedLateral nus:SceneParticipant_ac738295f21345659ff9ecf5ae6eab4d .
+}
