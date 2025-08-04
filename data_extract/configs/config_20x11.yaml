@@ -1,0 +1,23 @@
+# Copyright (c) 2025 Robert Bosch GmbH
+# SPDX-License-Identifier: AGPL-3.0
+
+# 20x11 config
+# Please make sure that the total coverage range of the
+# matrix is resaonable, too large matrix make take too
+# much time to compute.
+
+# size of one single square area
+area_size: 2
+
+#total width of the matrix in number of area, ego vehicle in centre
+# make sure that matrix_width is odd
+matrix_width: 11 
+
+#number of area ahead of ego vehicle
+front_matrix_height: 15
+
+#number of area behind ego vehicle
+back_matrix_height: 5
+
+#name/path of the json file to store the data
+json_file_name: "element_positions_20x11.json"

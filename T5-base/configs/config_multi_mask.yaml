@@ -1,0 +1,40 @@
+# Copyright (c) 2025 Robert Bosch GmbH
+# SPDX-License-Identifier: AGPL-3.0
+
+training:
+  epochs: 10
+  learning_rate: 1e-4
+  batch_size: 4
+  warmup_steps: 0
+  #max input sequence length
+  max_length: 1024
+  #max output sequence length
+  input_max_length: 2048
+  seed: 2023
+  train_size: 0.8
+
+data:
+  orientation: True
+  distance: True
+  country: True
+
+paths:
+  model_save_path: './T5_base'
+  matrix_file_path: '../data_extract/element_positions_20x11_original.json'
+  tokenizer_path: 't5-base'
+  model_load_path: 't5-base'
+
+scene_masking:
+  # next scene prediction, if set to True, will override random multi-masking prediction
+  next_scene: False
+  # number of outer rows and columns to be masked as <unk> when predicting more than 100 areas in next scene prediction
+  outer_rows: 3
+  outer_cols: 2
+  
+  # random multi-masking prediction
+  train_first_scene_mask_number: 3
+  train_second_scene_mask_number: 3
+  val_first_scene_mask_number: 3
+  val_second_scene_mask_number: 3
+  test_first_scene_mask_number: 0
+  test_second_scene_mask_number: 1
